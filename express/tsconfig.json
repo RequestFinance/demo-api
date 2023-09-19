@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2021", "es2022.error"],
+    "module": "commonjs",
+    "target": "ES2021",
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "typeRoots": ["./node_module/@types", "typings"]
+  },
+  "include": ["src/"]
+}

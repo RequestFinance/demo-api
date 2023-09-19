@@ -1,7 +1,8 @@
 # Request Finance API Demo
 
 
-This repository shows the basics to integrate the Request Finance API. It uses NextJS, but the configuration will be similar whatever the framework or language
+This repository shows the basics to integrate the Request Finance API.
+It provides two examples, one with Express, another one with NextJS.
 
 ## Getting Started 
 ### Create a Request Finance account
