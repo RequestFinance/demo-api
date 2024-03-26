@@ -5,7 +5,6 @@ export default handleAuth({
     try {
       await handleLogin(req, res, {
         authorizationParams: {
-          audience: "accounts",
           scope: "openid profile email offline_access",
         },
       });
@@ -14,7 +13,6 @@ export default handleAuth({
         res.status(error.status || 400).end(error.message);
         return;
       }
-      console.error(error);
       res.status(500);
     }
   },

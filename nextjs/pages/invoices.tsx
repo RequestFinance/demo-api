@@ -17,7 +17,7 @@ export default function Invoices({
 }) {
   return (
     <div>
-      {invoices.length === 0 ? (
+      {!Array.isArray(invoices) || invoices.length === 0 ? (
         <>No Result.</>
       ) : (
         <ul>
