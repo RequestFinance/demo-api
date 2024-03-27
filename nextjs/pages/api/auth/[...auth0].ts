@@ -5,7 +5,6 @@ export default handleAuth({
     try {
       await handleLogin(req, res, {
         authorizationParams: {
-          audience: "accounts",
           scope: "openid profile email offline_access",
         },
       });

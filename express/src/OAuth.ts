@@ -14,14 +14,13 @@ export class OAuth {
       client_secret: process.env.AUTH0_CLIENT_SECRET as string,
       redirect_uris: [process.env.AUTH0_CALLBACK_URL as string],
       response_types: ["code"],
-      id_token_signed_response_alg: "HS256",
     });
   }
 
   public static getAuthorizationUrl(code_challenge: string) {
     return OAuth.client.authorizationUrl({
       scope: "openid profile email offline_access",
-      resource: "accounts",
+      audience: process.env.AUTH0_AUDIENCE,
       code_challenge_method: "S256",
       code_challenge,
       redirect_uri: "http://localhost:3000/callback",
