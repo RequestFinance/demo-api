@@ -57,7 +57,7 @@ packages:
       futoin-hkdf: 1.5.1
       http-errors: 1.8.1
       joi: 17.6.4
-      jose: 2.0.6
+      jose: 2.0.7
       next: 14.1.4(react-dom@18.2.0)(react@18.2.0)
       on-headers: 1.0.2
       openid-client: 4.9.1
@@ -1955,8 +1955,8 @@ packages:
       '@sideway/pinpoint': 2.0.0
     dev: false
 
-  /jose@2.0.6:
-    resolution: {integrity: sha512-FVoPY7SflDodE4lknJmbAHSUjLCzE2H1F6MS0RYKMQ8SR+lNccpMf8R4eqkNYyyUjR5qZReOzZo5C5YiHOCjjg==}
+  /jose@2.0.7:
+    resolution: {integrity: sha512-5hFWIigKqC+e/lRyQhfnirrAqUdIPMB7SJRqflJaO29dW7q5DFvH1XCSTmv6PQ6pb++0k6MJlLRoS0Wv4s38Wg==}
     engines: {node: '>=10.13.0 < 13 || >=13.7.0'}
     dependencies:
       '@panva/asn1.js': 1.0.0
@@ -2283,7 +2283,7 @@ packages:
     dependencies:
       aggregate-error: 3.1.0
       got: 11.8.5
-      jose: 2.0.6
+      jose: 2.0.7
       lru-cache: 6.0.0
       make-error: 1.3.6
       object-hash: 2.2.0
