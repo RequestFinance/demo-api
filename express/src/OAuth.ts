@@ -19,7 +19,7 @@ export class OAuth {
 
   public static getAuthorizationUrl(code_challenge: string) {
     return OAuth.client.authorizationUrl({
-      scope: "openid profile email offline_access",
+      scope: process.env.AUTH0_SCOPES,
       audience: process.env.AUTH0_AUDIENCE,
       code_challenge_method: "S256",
       code_challenge,

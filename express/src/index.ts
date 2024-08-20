@@ -68,7 +68,7 @@ const bootstrap = async () => {
     }
     await OAuth.refreshTokenIfNeeded(req.user);
     const { data: invoices } = await axios.get(
-      "https://api.request.finance/invoices",
+      `${process.env.RF_API_URL}/invoices`,
       {
         headers: {
           Authorization: `Bearer ${req.user.requestFinanceData.accessToken}`,
