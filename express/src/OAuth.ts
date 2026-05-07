@@ -14,6 +14,7 @@ export class OAuth {
       client_secret: process.env.AUTH0_CLIENT_SECRET as string,
       redirect_uris: [process.env.AUTH0_CALLBACK_URL as string],
       response_types: ["code"],
+      id_token_signed_response_alg: "HS256",
     });
   }
 
